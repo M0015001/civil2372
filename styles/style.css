@@ -1,0 +1,146 @@
+@import './reset.css';
+
+/*----------頁面----------*/
+.content { /*頁面設定*/
+    position: relative;
+    width: 1024px;
+    min-height: 660px;
+    margin: 64px auto;
+    padding: 10px 10px;
+    background: #f0f0f0;
+    box-shadow: 0 10px 10px rgba(0,0,0,.3);
+	font-family: 微軟正黑體;
+	font-size: 20px;
+	text-align: justify;
+}
+
+.content p { /*文字設定*/
+	margin-bottom: 20px;
+    padding: 0 50px;
+    color: #3e3e3e;
+    line-height: 30px;
+}
+
+/*----------標題1----------*/
+.Title1 { /*標題1設定*/
+    position: relative;
+	display: block;
+    max-width: 100%;	
+	margin: 0 auto;
+	padding: 20px 0;
+    text-align: center;
+    font-size: 48px;	
+}
+
+.Title1 h1 { /*文字設定*/
+	padding: 5px 50px 10px 50px;
+    color: #003567;
+    letter-spacing: 10px;
+    border-bottom: 1px solid #003567;
+}
+
+/*----------標題2----------*/
+.Title2 { /*標題2設定*/
+    position: relative;
+	display: flex;
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 0px 0px 0px 20px;
+	align-items: center;
+	font-size: 24px;
+    font-weight: bold;
+    color: #003567;   
+    min-height: 72px;
+}
+
+/*----------分項----------*/
+.suboption { /*分項設定*/
+    position: relative;
+	display: block;
+	max-width: 100%;
+	margin: 0px 0px 0px 30px;
+    padding: 0px 0px 0px 20px;
+    color: #3e3e3e;    
+}
+
+.suboption li { /*標題設定*/
+	font-weight: bold;
+}
+
+.suboption li a { /*連結設定*/
+	padding: 0px 0px 0px 20px;
+	color: #0f0f0f;
+}
+
+.suboption p { /*文字設定*/
+	margin: 10px auto;
+}
+
+.suboption a { /*連結設定*/
+	padding: 0px 20px;
+	font-weight: bold;
+	color: #0f0f0f;
+}
+
+/*----------圖片----------*/
+.figure1 { /*圖片設定*/
+	position: relative;
+	display: block;
+    max-width: 100%;
+	margin: 0 auto;
+	padding: 0 50px;
+    text-align: center;
+	font-size: 20px;
+}
+
+.figure1 text { /*文字設定*/
+	font-weight: bold;
+	color: #3e3e3e;
+}
+
+/*----------標籤----------*/
+.outline-pdf { /*PDF*/
+    font-size: 16px;
+	font-style: normal;
+	color: #E60012;
+    background-color: transparent;
+    background-image: none;
+    border: 2px solid #E60012;
+	margin: 0 0 0 4px;
+    padding: 0 4px;
+}
+
+.outline-pdf:hover,a:hover *>.outline-pdf,a:hover>.outline-pdf { /*PDF轉換*/
+    color: #fff;
+    background-color: #E60012;
+    border-color: #E60012
+}
+
+.outline-jpg { /*JPG*/
+    font-size: 16px;
+	font-style: normal;
+	color: #053df5;
+    background-color: transparent;
+    background-image: none;
+    border: 2px solid #053df5;
+	margin: 0 0 0 4px;
+    padding: 0 4px;
+}
+
+/*----------表格----------*/
+table,
+tr {
+	width: 100%;
+}
+
+td {
+	height: 40px;
+	border: 2px solid #f0f0f0;
+	text-align: center;
+	line-height: 40px;
+}
+
+td a img {
+	max-width: 90%;
+	padding: 10px;
+}
