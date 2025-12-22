@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>水災風險評估</title>
+    <style>
+        /* 基礎樣式 */
+        body {
+            font-family: '微軟正黑體', 'Arial', sans-serif;
+            line-height: 1.7;
+            margin: 0;
+            padding: 40px 20px;
+            background-color: #f4ffec; /* Light green background */
+            color: #333;
+        }
+        .container {
+            background: white;
+            padding: 35px 40px;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+            max-width: 900px;
+            margin: auto;
+        }
+        
+        /* 標題樣式 */
+        h1 {
+            color: #1a5e1f; /* Dark green */
+            border-bottom: 4px solid #6aa84f; /* Green separator */
+            padding-bottom: 15px;
+            text-align: center;
+            font-size: 3.3em;
+            margin-top: 0;
+            letter-spacing: 1px;
+        }
+        
+        /* 次標題樣式 */
+        h2 {
+            color: #1a5e1f; /* Dark green */
+            border-bottom: 2px solid #c6e0b4;
+            padding-bottom: 8px;
+            margin-top: 35px;
+            margin-bottom: 25px;
+            font-size: 2.5em;
+        }
+        
+        /* 三級標題樣式 */
+        h3 {
+            color: #6aa84f; /* Medium green */
+            margin-top: 25px;
+            font-size: 1.8em;
+            padding-bottom: 5px;
+        }
+        
+        /* 內文段落 */
+        p {
+            margin-top: 8px;
+            font-size: 1.25em;
+            color: #444;
+            margin-bottom: 15px;
+        }
+
+        /* 備註樣式 */
+        .note {
+            font-size: 1.15em;
+            color: #333;
+            margin-top: 15px;
+            padding: 10px;
+            border-left: 4px solid #6aa84f; /* Green line */
+            background-color: #e6ffe6;
+            border-radius: 4px;
+        }
+        
+        /* 圖片佔位符樣式 */
+        .image-placeholder {
+            text-align: center;
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px dashed #6aa84f;
+            background-color: #f9fdf9;
+            font-style: italic;
+            color: #666;
+        }
+		
+		img {
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>水災風險評估</h1>
+
+    <h2>風險定義</h2>
+
+    <h3>風險 = 危害度 × 脆弱度 × 暴露度</h3>
+    <p>■ <strong>危害度：</strong>災害造成的威脅程度</p>
+	<p>■ <strong>脆弱度：</strong>面對災害時的應對與調適能力</p>
+	<p>■ <strong>暴露度：</strong>受災害影響的對象或設施</p>
+
+    <div class="image-placeholder">
+        <img src="images/FRA_01.webp" alt="風險因素組成圖" style="max-width:50%; height:auto;" />
+    </div>
+
+    <h2>水災風險</h2>
+
+    <h3>AR6情境</h3>
+    <p>■ <strong>聯合國政府間氣候變遷專門委員會(IPCC)</strong>在第六次的評估報告(AR6)中提出的最新氣候變遷情境</p>
+	
+    <div class="image-placeholder">
+        <img src="images/FRA_02.webp" alt="AR6氣候變遷情境" style="max-width:75%; height:auto;" />
+    </div>
+
+	<hr>
+
+    <h3>危害度</h3>
+    <p>■ <strong>危害度 = 降雨機率 × 淹水深度</strong></p>
+	<p>■ <strong>降雨機率：</strong>使用<strong>AR6統計降尺度日降雨量資料</strong>，計算各村里發生<strong>日累積雨量650毫米</strong>的機率</p>
+	<p>■ <strong>淹水深度：</strong>使用<strong>第三代淹水潛勢圖</strong>，計算各村里的淹水程度</p>
+	<p>■ 危害度等級高表示災害造成的威脅程度<strong>相對較高</strong></p>
+	<p>■ 隨著<strong>溫室氣體排放量增加</strong>，各村里的危害度等級亦隨之<strong>上升</strong></p>
+	<p>■ 影響範圍與程度主要取決於<strong>淹水深度</strong>，危害度等級高的村里主要集中在<strong>竹南鎮</strong>、<strong>頭份市</strong>及<strong>後龍鎮</strong></p>
+	
+    <div class="image-placeholder">
+        <img src="images/FRA_03.webp" alt="危害度等級地圖" style="max-width:75%; height:auto;" />
+    </div>
+
+    <hr>
+
+    <h3>脆弱度</h3>
+    <p>■ 使用<strong>減災動資料</strong>網站，選擇適用於<strong>淹水災害</strong>的評估指標細項，計算各村里的<strong>社會脆弱度</strong></p>
+	<p>■ 脆弱度等級高表示面對災害時的應對與調適能力<strong>相對較低</strong></p>
+	<p>■ <strong>脆弱度等級5</strong>的鄉鎮市分別是<strong>竹南鎮</strong>與<strong>頭份市</strong></p>
+	
+    <div class="image-placeholder">
+        <img src="images/FRA_04.webp" alt="脆弱度等級地圖" style="max-width:37%; height:auto;" />
+    </div>
+
+    <hr>
+
+    <h3>暴露度</h3>
+    <p>■ 使用<strong><a href="https://mlhr.miaoli.gov.tw/" target="_blank" rel="noopener noreferrer">苗栗縣戶政服務網</a></strong>的人口數資料，計算各村里的<strong>人口密度</strong></p>
+	<p>■ 暴露度等級高表示受災害影響的人口<strong>相對較高</strong></p>
+	<p>■ 暴露度等級高的村里主要集中在<strong>頭份市</strong>、<strong>竹南鎮</strong>及<strong>苗栗市</strong>較高度都會化的區域</p>
+	
+    <div class="image-placeholder">
+        <img src="images/FRA_05.webp" alt="暴露度等級地圖" style="max-width:37%; height:auto;" />
+    </div>
+
+    <hr>
+
+    <h3>風險</h3>
+    <p>■ 風險等級與影響範圍隨著<strong>溫室氣體排放量增加</strong>而上升，表示兩者為正相關關係</p>
+	<p>■ 在<strong>SSP5-8.5情境</strong>下，水災風險等級高的村里主要集中在<strong>頭份市</strong>與<strong>竹南鎮</strong></p>
+	
+    <div class="image-placeholder">
+        <img src="images/FRA_06.webp" alt="AR6氣候變遷情境" style="max-width:75%; height:auto;" />
+    </div>
+
+    <div class="note">
+        本研究由國家科學及技術委員會(NSTC)資助，補助編號為NSTC 114-2119-M-239-001
+    </div>
+
+</div>
+
+</body>
+</html>
